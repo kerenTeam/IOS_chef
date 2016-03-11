@@ -6,10 +6,10 @@
 //  Copyright © 2016年 LiaoAaron. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "FxBasePage.h"  //定义了基类后马上在整理继承
 
-@interface HomePage : UIViewController
-
+@interface HomePage : FxBasePage
 
 @end
+
 

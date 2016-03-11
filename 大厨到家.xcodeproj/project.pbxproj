@@ -10,9 +10,9 @@
 		344B46C71C8ED82C00B4626F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 344B46C61C8ED82C00B4626F /* main.m */; };
 		344B46CA1C8ED82C00B4626F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 344B46C91C8ED82C00B4626F /* AppDelegate.m */; };
 		344B46CD1C8ED82C00B4626F /* HomePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 344B46CC1C8ED82C00B4626F /* HomePage.m */; };
-		344B46D01C8ED82C00B4626F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344B46CE1C8ED82C00B4626F /* Main.storyboard */; };
 		344B46D21C8ED82C00B4626F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344B46D11C8ED82C00B4626F /* Assets.xcassets */; };
-		344B46D51C8ED82C00B4626F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344B46D31C8ED82C00B4626F /* LaunchScreen.storyboard */; };
+		34C350671C903B52008397BD /* FxBasePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C350661C903B52008397BD /* FxBasePage.m */; };
+		34C3506B1C903EBA008397BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C350691C903EBA008397BD /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +22,14 @@
 		344B46C91C8ED82C00B4626F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		344B46CB1C8ED82C00B4626F /* HomePage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePage.h; sourceTree = "<group>"; };
 		344B46CC1C8ED82C00B4626F /* HomePage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePage.m; sourceTree = "<group>"; };
-		344B46CF1C8ED82C00B4626F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		344B46D11C8ED82C00B4626F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		344B46D41C8ED82C00B4626F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		344B46D61C8ED82C00B4626F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		344B46E41C8ED94D00B4626F /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		344B46EB1C8EDBB600B4626F /* Readme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Readme.h; path = "大厨到家/Readme.h"; sourceTree = "<group>"; };
+		34C350641C903191008397BD /* NewsReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewsReader-Prefix.pch"; sourceTree = "<group>"; };
+		34C350651C903B52008397BD /* FxBasePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxBasePage.h; sourceTree = "<group>"; };
+		34C350661C903B52008397BD /* FxBasePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxBasePage.m; sourceTree = "<group>"; };
+		34C350691C903EBA008397BD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +70,11 @@
 				344B46E01C8ED87900B4626F /* DB */,
 				344B46E11C8ED88000B4626F /* Utillity */,
 				344B46E21C8ED88B00B4626F /* ThirdSDK */,
-				344B46E31C8ED89900B4626F /* Resources */,
-				344B46C51C8ED82C00B4626F /* Supporting Files */,
-				344B46E41C8ED94D00B4626F /* Defines.h */,
+				34C350631C90306C008397BD /* Define */,
 				344B46C81C8ED82C00B4626F /* AppDelegate.h */,
 				344B46C91C8ED82C00B4626F /* AppDelegate.m */,
-				344B46D61C8ED82C00B4626F /* Info.plist */,
+				344B46E31C8ED89900B4626F /* Resources */,
+				344B46C51C8ED82C00B4626F /* Supporting Files */,
 			);
 			path = "大厨到家";
 			sourceTree = "<group>";
@@ -81,7 +82,9 @@
 		344B46C51C8ED82C00B4626F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				344B46D61C8ED82C00B4626F /* Info.plist */,
 				344B46C61C8ED82C00B4626F /* main.m */,
+				34C350641C903191008397BD /* NewsReader-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -100,7 +103,7 @@
 				344B46E91C8EDB2100B4626F /* Widget */,
 				344B46E81C8EDB1A00B4626F /* Page */,
 			);
-			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		344B46DE1C8ED85E00B4626F /* Model */ = {
@@ -145,14 +148,14 @@
 				344B46E61C8EDA6800B4626F /* Image */,
 				344B46E51C8EDA5A00B4626F /* Config */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		344B46E51C8EDA5A00B4626F /* Config */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Config;
+			path = Config;
 			sourceTree = "<group>";
 		};
 		344B46E61C8EDA6800B4626F /* Image */ = {
@@ -160,25 +163,26 @@
 			children = (
 				344B46D11C8ED82C00B4626F /* Assets.xcassets */,
 			);
-			name = Image;
+			path = Image;
 			sourceTree = "<group>";
 		};
 		344B46E71C8EDA7400B4626F /* Xib */ = {
 			isa = PBXGroup;
 			children = (
-				344B46D31C8ED82C00B4626F /* LaunchScreen.storyboard */,
-				344B46CE1C8ED82C00B4626F /* Main.storyboard */,
+				34C350691C903EBA008397BD /* Main.storyboard */,
 			);
-			name = Xib;
+			path = Xib;
 			sourceTree = "<group>";
 		};
 		344B46E81C8EDB1A00B4626F /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				34C350651C903B52008397BD /* FxBasePage.h */,
+				34C350661C903B52008397BD /* FxBasePage.m */,
 				344B46CB1C8ED82C00B4626F /* HomePage.h */,
 				344B46CC1C8ED82C00B4626F /* HomePage.m */,
 			);
-			name = Page;
+			path = Page;
 			sourceTree = "<group>";
 		};
 		344B46E91C8EDB2100B4626F /* Widget */ = {
@@ -193,6 +197,14 @@
 			children = (
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		34C350631C90306C008397BD /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				344B46E41C8ED94D00B4626F /* Defines.h */,
+			);
+			path = Define;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,9 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				344B46D51C8ED82C00B4626F /* LaunchScreen.storyboard in Resources */,
+				34C3506B1C903EBA008397BD /* Main.storyboard in Resources */,
 				344B46D21C8ED82C00B4626F /* Assets.xcassets in Resources */,
-				344B46D01C8ED82C00B4626F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,31 +278,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				344B46CD1C8ED82C00B4626F /* HomePage.m in Sources */,
+				34C350671C903B52008397BD /* FxBasePage.m in Sources */,
 				344B46CA1C8ED82C00B4626F /* AppDelegate.m in Sources */,
 				344B46C71C8ED82C00B4626F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		344B46CE1C8ED82C00B4626F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				344B46CF1C8ED82C00B4626F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		344B46D31C8ED82C00B4626F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				344B46D41C8ED82C00B4626F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		344B46D71C8ED82C00B4626F /* Debug */ = {
@@ -378,7 +371,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "大厨到家/NewsReader-Prefix.pch";
 				INFOPLIST_FILE = "大厨到家/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Liao.Aaron.com.----";
@@ -390,7 +385,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "大厨到家/NewsReader-Prefix.pch";
 				INFOPLIST_FILE = "大厨到家/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Liao.Aaron.com.----";
@@ -417,6 +414,7 @@
 				344B46DB1C8ED82C00B4626F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
